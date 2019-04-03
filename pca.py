@@ -63,7 +63,7 @@ def pca(X, show_pc_plots=False, with_std=False, with_mean=False):
     plotify.bar(
         x_list=range(len(eigenvalues)),
         y_list=var_exp,
-        title='Explained Variance by PC',
+        title='Explained Variance by PC (Pesticide Dataset)',
         ylabel='% Variance Explained',
         xlabel='PCs in order of descending variance',
         xticks=xticks,
@@ -72,7 +72,7 @@ def pca(X, show_pc_plots=False, with_std=False, with_mean=False):
 
     plotify.plot(
         y_list=cumulative_explain_variences,
-        title='Cumulative Explained Variance',
+        title='Cumulative Explained Variance (Pesticide Dataset)',
         ylabel='% Variance Explained',
         xlabel='Number of Features',
     )

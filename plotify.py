@@ -239,7 +239,7 @@ class Plotify:
     return
 
   def get_figax(self, is3d=False):
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(8,6))
     fig.patch.set_facecolor(self.background_color)
 
     ax.set_facecolor(self.background_color)
